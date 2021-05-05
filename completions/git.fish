@@ -175,6 +175,30 @@ complete -f -c git -n '__fish_git_flow_using_command release track' -a '(__fish_
 
 
 
+## git-flow bugfix
+
+complete -f -c git -n '__fish_git_flow_using_command' -a bugfix      -d 'Manage bugfix branches'
+complete -f -c git -n '__fish_git_flow_using_command bugfix' -a list -d 'List bugfix branches'
+complete -f -c git -n '__fish_git_flow_using_command bugfix' -s v    -d 'Verbose output'
+
+complete -f -c git -n '__fish_git_flow_using_command bugfix' -a start -d 'Start a new bugfix branch'
+complete -f -c git -n '__fish_git_flow_using_command bugfix start' -s F  -d 'Fetch from origin first'
+
+complete -f -c git -n '__fish_git_flow_using_command bugfix' -a finish   -d 'Finish a bugfix branch'
+complete -f -c git -n '__fish_git_flow_using_command bugfix finish' -s F -d 'Fetch from origin first'
+complete -f -c git -n '__fish_git_flow_using_command bugfix finish' -s s -d 'Sign the bugfix tag cryptographically'
+complete -f -c git -n '__fish_git_flow_using_command bugfix finish' -s u -d 'Use the given GPG-key for the digital signature (implies -s)'
+complete -f -c git -n '__fish_git_flow_using_command bugfix finish' -s m -d 'Use the given tag message'
+complete -f -c git -n '__fish_git_flow_using_command bugfix finish' -s p -d 'Push to $ORIGIN after performing finish'
+complete -f -c git -n '__fish_git_flow_using_command bugfix finish' -a '(__fish_git_flow_branches bugfix)' -d 'bugfix branch'
+
+complete -f -c git -n '__fish_git_flow_using_command bugfix' -a delete   -d 'Delete a bugfix branch'
+complete -f -c git -n '__fish_git_flow_using_command bugfix delete' -s f -d 'Force deletion'
+complete -f -c git -n '__fish_git_flow_using_command bugfix delete' -s r -d 'Delete remote branch'
+complete -f -c git -n '__fish_git_flow_using_command bugfix delete' -a '(__fish_git_flow_branches bugfix)' -d 'Bugfix branch'
+
+
+
 ## git-flow hotfix
 
 complete -f -c git -n '__fish_git_flow_using_command' -a hotfix      -d 'Manage hotfix branches'
