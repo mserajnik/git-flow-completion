@@ -162,7 +162,7 @@ complete -f -c git -n '__fish_git_flow_using_command release finish' -s m -d 'Us
 complete -f -c git -n '__fish_git_flow_using_command release finish' -s p -d 'Push to $ORIGIN after performing finish'
 complete -f -c git -n '__fish_git_flow_using_command release finish' -a '(__fish_git_flow_branches release)' -d 'Release branch'
 
-complete -f -c git -n '__fish_git_flow_using_command release' -a delete   -d 'Delete a feature branch'
+complete -f -c git -n '__fish_git_flow_using_command release' -a delete   -d 'Delete a release branch'
 complete -f -c git -n '__fish_git_flow_using_command release delete' -s f -d 'Force deletion'
 complete -f -c git -n '__fish_git_flow_using_command release delete' -s r -d 'Delete remote branch'
 complete -f -c git -n '__fish_git_flow_using_command release delete' -a '(__fish_git_flow_branches release)' -d 'Release branch'
@@ -192,7 +192,7 @@ complete -f -c git -n '__fish_git_flow_using_command hotfix finish' -s m -d 'Use
 complete -f -c git -n '__fish_git_flow_using_command hotfix finish' -s p -d 'Push to $ORIGIN after performing finish'
 complete -f -c git -n '__fish_git_flow_using_command hotfix finish' -a '(__fish_git_flow_branches hotfix)' -d 'Hotfix branch'
 
-complete -f -c git -n '__fish_git_flow_using_command hotfix' -a delete   -d 'Delete a feature branch'
+complete -f -c git -n '__fish_git_flow_using_command hotfix' -a delete   -d 'Delete a hotfix branch'
 complete -f -c git -n '__fish_git_flow_using_command hotfix delete' -s f -d 'Force deletion'
 complete -f -c git -n '__fish_git_flow_using_command hotfix delete' -s r -d 'Delete remote branch'
 complete -f -c git -n '__fish_git_flow_using_command hotfix delete' -a '(__fish_git_flow_branches hotfix)' -d 'Hotfix branch'
